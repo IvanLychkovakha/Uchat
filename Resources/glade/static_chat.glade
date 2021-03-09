@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="upper">100</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
+    <signal name="changed" handler="test_1" swapped="no"/>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../images/up-arrow_1.png</property>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="name">popov_1</property>
+    <property name="can-focus">False</property>
+    <child>
+      <!-- n-columns=2 n-rows=1 -->
+      <object class="GtkGrid">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="name">scroll_3</property>
+            <property name="width-request">400</property>
+            <property name="height-request">400</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <!-- n-columns=1 n-rows=1 -->
+                  <object class="GtkGrid" id="grid_popov_users">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <property name="column-homogeneous">True</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=1 n-rows=2 -->
+          <object class="GtkGrid">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="name">skroll_2</property>
+                <property name="width-request">150</property>
+                <property name="height-request">400</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="hscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <child>
+                  <object class="GtkViewport">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <!-- n-columns=1 n-rows=1 -->
+                      <object class="GtkGrid" id="grid_popv_teg">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="chat_g_name">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="placeholder-text" translatable="yes">Enter chat name</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="uchat_win">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center</property>
+    <property name="default-width">1400</property>
+    <property name="default-height">800</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="name">big_Wid</property>
+            <property name="width-request">200</property>
+            <property name="height-request">805</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <property name="vscrollbar-policy">never</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkFixed">
+                    <property name="width-request">32</property>
+                    <property name="height-request">32</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkScrolledWindow">
+                        <property name="width-request">200</property>
+                        <property name="height-request">710</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="hscrollbar-policy">never</property>
+                        <property name="shadow-type">etched-out</property>
+                        <child>
+                          <object class="GtkViewport">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <!-- n-columns=1 n-rows=1 -->
+                              <object class="GtkGrid" id="grid_user_online">
+                                <property name="name">g_grid_online</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="orientation">vertical</property>
+                                <property name="column-homogeneous">True</property>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="y">94</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="name">f_online</property>
+                        <property name="width-request">100</property>
+                        <property name="height-request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">chats:</property>
+                      </object>
+                      <packing>
+                        <property name="x">5</property>
+                        <property name="y">40</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="width-request">200</property>
+                        <property name="height-request">20</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="pixbuf">../images/h_h.png</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuButton" id="menu_tine">
+                        <property name="name">item_menus</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="focus-on-click">False</property>
+                        <property name="receives-default">True</property>
+                        <property name="has-tooltip">True</property>
+                        <property name="direction">none</property>
+                        <property name="popover">popover1</property>
+                        <signal name="toggled" handler="if_toogled" swapped="no"/>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="x">24</property>
+                        <property name="y">10</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="add_group">
+                        <property name="name">groups</property>
+                        <property name="width-request">30</property>
+                        <property name="height-request">30</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <child internal-child="accessible">
+                          <object class="AtkObject" id="add_group-atkobject">
+                            <property name="AtkObject::accessible-role" translatable="yes">dialog</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="x">130</property>
+                        <property name="y">6</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">1000</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="id_fors_box">
+            <property name="name">boxs_css</property>
+            <property name="width-request">1000</property>
+            <property name="height-request">802</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkBox">
+                <property name="name">box_infos</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkFixed" id="chat_infos">
+                    <property name="width-request">32</property>
+                    <property name="height-request">32</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="iddes">
+                        <property name="width-request">60</property>
+                        <property name="height-request">45</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="stock">gtk-edit</property>
+                      </object>
+                      <packing>
+                        <property name="x">60</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="chat_namess">
+                        <property name="name">chatname</property>
+                        <property name="width-request">200</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">chat_name</property>
+                      </object>
+                      <packing>
+                        <property name="x">370</property>
+                        <property name="y">5</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed">
+                <property name="width-request">32</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow">
+                    <property name="width-request">1000</property>
+                    <property name="height-request">700</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="vadjustment">adjustment1</property>
+                    <property name="hscrollbar-policy">never</property>
+                    <property name="vscrollbar-policy">always</property>
+                    <child>
+                      <object class="GtkViewport">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkStack" id="stack_1">
+                            <property name="name">stack_1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="hhomogeneous">False</property>
+                            <property name="vhomogeneous">False</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed">
+                <property name="width-request">32</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkEntry" id="chat_entry">
+                    <property name="name">chat_entry</property>
+                    <property name="width-request">950</property>
+                    <property name="height-request">55</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="push">
+                    <property name="name">button_pushes</property>
+                    <property name="width-request">50</property>
+                    <property name="height-request">55</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">image1</property>
+                    <signal name="clicked" handler="push_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">950</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="name">box_us_pps</property>
+            <property name="width-request">200</property>
+            <property name="height-request">806</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed">
+                <property name="width-request">32</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <child>
+                  <object class="GtkImage" id="image_user">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">../images/us_128.png</property>
+                  </object>
+                  <packing>
+                    <property name="x">35</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="add_">
+                    <property name="label" translatable="yes">exit</property>
+                    <property name="name">exitss</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">50</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <signal name="clicked" handler="add_clicked" swapped="no"/>
+                    <child internal-child="accessible">
+                      <object class="AtkObject" id="add_-atkobject">
+                        <property name="AtkObject::accessible-role" translatable="yes">dialog</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">50</property>
+                    <property name="y">755</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="user_names">
+                    <property name="name">name_our</property>
+                    <property name="width-request">200</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">name</property>
+                  </object>
+                  <packing>
+                    <property name="y">165</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">1200</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

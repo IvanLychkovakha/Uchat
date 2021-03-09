@@ -1,0 +1,127 @@
+
+
+#f_online{
+    color:#1ee3cf;
+}
+
+#boxs_css{
+    background: url("../images/Background1000_800.png") no-repeat;
+    background-size: cover;
+    border:5px;
+    border-color:brown;
+}
+
+#label_time{
+    font-size:7px;
+}
+
+#stack_1>grid>grid{
+    background: #6b48ff;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+
+
+#stack_1>grid>grid>label{
+    color:#f2f4f6;
+}
+
+#g_grid_online{
+    background: url("../images/pj.jpg");
+}
+
+#g_grid_online>button{
+    color:#1ee3cf;
+    background: #6b48ff;
+    border:none;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+}
+
+
+#g_grid_online>button:hover{
+    color:#1ee3cf;
+    background-color: #9280df;
+    border:none;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+}
+
+#g_grid_online>button:checked{
+    color:rgb(109, 83, 228);
+    background-color:rgb(9, 3, 37);
+    border:none;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+}
+
+
+
+#chat_entry{
+    color:#f2f4f6;
+    background: #0d3f67;
+    border-radius: 0%;
+    border: none;
+    outline: none;
+}
+
+#button_pushes{
+    background: #0d3f67;
+    border: none;
+    border-radius: 0%;
+    outline: none;
+    box-shadow: none;
+}
+
+#big_Wid{
+    background: #0d3f67;
+}
+
+
+#box_infos{
+    background: #0d3f67;
+}
+#chatname{
+    color:#1ee3cf;
+    font-size: 16px;
+}
+
+
+#groups{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: url("../images/group_chat_100.png") no-repeat;
+}
+
+#box_us_pps{
+    background: #0d3f67;
+    border:2px;
+    border-color: blanchedalmond;
+    
+}
+
+#name_our{
+    background: #6b48ff;
+    border: 15px;
+    color:#f2f4f6;
+    font-size: 16px;
+    border-color: #1ee3cf;
+    border-left: none;
+    border-right: none;
+}
+
+#popov_1{
+    background: url("../images/wallchat.jpg");
+}
+
+#skroll_2{
+    color:#f2f4f6;
+}
+
+
+

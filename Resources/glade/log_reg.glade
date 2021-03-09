@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="halign">center</property>
+    <property name="valign">center</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <property name="pixbuf">../images/picture.png</property>
+  </object>
+  <object class="GtkWindow" id="log_win">
+    <property name="name">window</property>
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center</property>
+    <property name="default-width">800</property>
+    <property name="default-height">800</property>
+    <child>
+      <object class="GtkFixed" id="log_fix">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">../images/registrwall.jpg</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkFixed" id="log_fix_main">
+            <property name="name">mini_fixed</property>
+            <property name="width-request">300</property>
+            <property name="height-request">460</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton" id="but_photos">
+                <property name="name">but_photos</property>
+                <property name="width-request">300</property>
+                <property name="height-request">460</property>
+                <property name="visible">True</property>
+                <property name="sensitive">False</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="opacity">0.6199999950826169</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="y">20</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStackSwitcher" id="stakkki">
+                <property name="name">gtk_swith</property>
+                <property name="width-request">20</property>
+                <property name="height-request">20</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="homogeneous">True</property>
+                <property name="icon-size">0</property>
+                <property name="stack">stack_log</property>
+                <signal name="button-press-event" handler="hide_press" swapped="no"/>
+                <signal name="button-release-event" handler="hide_release" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">28</property>
+                <property name="y">70</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStack" id="stack_log">
+                <property name="width-request">300</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="transition-duration">800</property>
+                <child>
+                  <object class="GtkFixed">
+                    <property name="name">hleb</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkEntry" id="in_ent_login">
+                        <property name="name">login</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="hexpand">True</property>
+                        <property name="vexpand">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="placeholder-text" translatable="yes">phone</property>
+                        <property name="input-purpose">phone</property>
+                      </object>
+                      <packing>
+                        <property name="x">64</property>
+                        <property name="y">10</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="in_ent_password">
+                        <property name="name">pass</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="secondary-icon-pixbuf">../images/view.png</property>
+                        <property name="placeholder-text" translatable="yes">Password</property>
+                        <signal name="icon-press" handler="in_ent_icon_password" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">64</property>
+                        <property name="y">100</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="sig_in">
+                        <property name="label" translatable="yes">SIG IN</property>
+                        <property name="name">sigin</property>
+                        <property name="width-request">250</property>
+                        <property name="height-request">20</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <signal name="clicked" handler="sig_in_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">25</property>
+                        <property name="y">280</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_error">
+                        <property name="name">l_error</property>
+                        <property name="width-request">300</property>
+                        <property name="height-request">80</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">You entered the wrong login or password please try again. </property>
+                        <property name="justify">center</property>
+                        <property name="wrap">True</property>
+                        <attributes>
+                          <attribute name="weight" value="book"/>
+                          <attribute name="stretch" value="semi-condensed"/>
+                          <attribute name="foreground" value="#eded33333b3b"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="y">150</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="name">SIG IN</property>
+                    <property name="title" translatable="yes">SIG IN</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFixed">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkEntry" id="ip_ent_last">
+                        <property name="name">pass_entry</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="placeholder-text" translatable="yes">Last Name</property>
+                      </object>
+                      <packing>
+                        <property name="x">60</property>
+                        <property name="y">100</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="step_two">
+                        <property name="label" translatable="yes">SIG_UP</property>
+                        <property name="name">sigup</property>
+                        <property name="width-request">250</property>
+                        <property name="height-request">20</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <signal name="clicked" handler="sig_up_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">25</property>
+                        <property name="y">280</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="ip_ent_first">
+                        <property name="name">pass_first</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="placeholder-text" translatable="yes">First Name</property>
+                      </object>
+                      <packing>
+                        <property name="x">60</property>
+                        <property name="y">50</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="ip_pasword">
+                        <property name="name">pass_last</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="secondary-icon-pixbuf">../images/view.png</property>
+                        <property name="placeholder-text" translatable="yes">Password</property>
+                        <signal name="icon-press" handler="ip_press" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">60</property>
+                        <property name="y">150</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="ip_confirm">
+                        <property name="name">pass_confirm</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="secondary-icon-pixbuf">../images/view.png</property>
+                        <property name="placeholder-text" translatable="yes">Confirm password</property>
+                        <signal name="icon-press" handler="ip_en_icon_confirm" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="x">60</property>
+                        <property name="y">200</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkEntry" id="in_login">
+                        <property name="name">pass_login</property>
+                        <property name="width-request">182</property>
+                        <property name="height-request">40</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="has-frame">False</property>
+                        <property name="placeholder-text" translatable="yes">phone</property>
+                      </object>
+                      <packing>
+                        <property name="x">60</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_error_2">
+                        <property name="width-request">300</property>
+                        <property name="height-request">20</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Please fill in all the fields correctly</property>
+                        <property name="wrap">True</property>
+                        <attributes>
+                          <attribute name="foreground" value="#eded33333b3b"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="y">255</property>
+                      </packing>
+                    </child>
+                    <style>
+                      <class name="background: red"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="name">SIG UP</property>
+                    <property name="title" translatable="yes">SIG UP</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="x">4</property>
+                <property name="y">125</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">120</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="hexpand">True</property>
+            <property name="pixbuf">../images/log_r_200.png</property>
+          </object>
+          <packing>
+            <property name="x">321</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="win_dialog">
+    <property name="name">gtk_dialog_d</property>
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">600</property>
+    <property name="default-height">600</property>
+    <property name="icon-name">User add photos</property>
+    <property name="type-hint">dialog</property>
+    <property name="deletable">False</property>
+    <property name="transient-for">log_win</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="name">gtk_d_box</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Ok</property>
+                <property name="name">butt_ok</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="dialog_ok" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Cancel</property>
+                <property name="name">butt_cancel</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="dialog_cancel" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton" id="us_add_photo">
+                <property name="label" translatable="yes">
+</property>
+                <property name="name">button_images</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">image1</property>
+                <signal name="clicked" handler="set_photos" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">336</property>
+                <property name="y">39</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_photos">
+                <property name="name">image_name</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="pixbuf">../images/us_128.png</property>
+              </object>
+              <packing>
+                <property name="x">229</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="name">labeles</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Please select the tags from the available ones.</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="name">skroll</property>
+            <property name="width-request">0</property>
+            <property name="height-request">230</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hscrollbar-policy">never</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <!-- n-columns=1 n-rows=1 -->
+                  <object class="GtkGrid" id="grid_tags">
+                    <property name="name">skriling</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

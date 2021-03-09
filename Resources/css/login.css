@@ -1,0 +1,147 @@
+
+
+#but_photos{
+    background : black;
+    border-radius: 20px;
+}
+
+stackswitcher{
+    box-shadow: none;
+    background: none;
+    border: none;
+    outline: none;
+    
+}
+
+stackswitcher>button{
+    border: none;
+    box-shadow: none;
+    background: none;
+    border-bottom: 1px solid #0d3f67;
+    outline: none;
+    color: #6b48ff;
+    text-shadow: none;
+}
+
+stackswitcher>button:checked{
+    border: none;
+    box-shadow: none;
+    background: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    color: #f2f4f6;
+}
+
+
+
+#sigin{
+    border-radius:10px;
+    border-color: #0d3f67;
+    background:#0d3f67;
+    outline: none;
+    box-shadow: none;
+    color: #f2f4f6;
+}
+
+
+
+#login{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;
+    color: #f2f4f6;
+}
+
+#pass{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+
+
+#pass_entry{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+#pass_{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+#pass_first{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+#pass_last{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+#pass_confirm{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+#pass_login{
+    border:2px;
+    outline:none;
+    /* box-shadow: 2; */
+    border-bottom: 3px solid #0d3f67;;
+    color: #f2f4f6;
+}
+
+
+#sigup{
+    border-radius:10px;
+    border-color: #0d3f67;
+    background:#0d3f67;
+    outline: none;
+    box-shadow: none;
+    color: #f2f4f6;
+}
+
+#gtk_dialog_d{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#butt_ok{
+    border-radius:10px;
+    border-color: #0d3f67;
+    background:#0d3f67;
+    outline: none;
+    box-shadow: none;
+    color: #f2f4f6;
+}
+
+#butt_cancel{
+    border-radius:10px;
+    border-color: #0d3f67;
+    background:#0d3f67;
+    outline: none;
+    box-shadow: none;
+    color: #f2f4f6;
+}
+
+#but_ph{
+    border: 1px;
+    border-radius: 10px;
+    background: none; 
+    box-shadow: none; 
+}
+
+
